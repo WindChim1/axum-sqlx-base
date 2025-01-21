@@ -1,0 +1,65 @@
+[package]
+name = "axum-sqlx-base"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.8.1"
+#可获取调用者ip
+axum-client-ip = "0.7.0"
+chrono = "0.4.39"
+config = "0.15.5"
+dotenvy = "0.15.7"
+
+
+redis = { version = "0.28.1", features = ["aio", "tokio-comp"] }
+serde = "1.0.217"
+serde_json = "1.0.135"
+sqlx = { version = "0.8.3", features = [
+  "chrono",
+  "json",
+  "macros",
+  "mysql",
+  "runtime-tokio",
+] }
+
+
+thiserror = "2.0.11"
+timedmap = "1.0.2"
+tokio = { version = "1.43.0", features = ["full"] }
+
+# 分布式跟踪的 SDK，用于采集监控数据，这里用其日志功能
+# attributes自动为函数添加追踪
+# 在函数定义前添加 #[tracing::instrument]，当函数被调用时，tracing 库会自动记录函数的进入、退出情况以及执行时长等信息，并且可以携带函数的参数等作为额外的上下文信息
+tracing = { version = "0.1.41", features = ["attributes"] }
+
+tracing-appender = "0.2.3"
+tracing-bunyan-formatter = "0.3.10"
+tracing-error = "0.2.1"
+tracing-log = "0.2.0"
+tracing-opentelemetry = "0.28.0"
+tracing-subscriber = { version = "0.3.19", features = [
+  "env-filter",
+  "local-time",
+] }
+
+
+opentelemetry = "0.27.1"
+opentelemetry-otlp = { version = "0.27.0", features = [
+  "grpc-tonic",
+  "metrics",
+  "trace",
+] }
+opentelemetry_sdk = { version = "0.27.1", features = ["rt-tokio"] }
+
+
+umya-spreadsheet = "2.2.1"
+jsonwebtoken = "9.3.0"
+uuid = { version = "1.12.0", features = ["serde", "v4"] }
+once_cell = "1.20.2"
+anyhow = "1.0.95"
+
+#swagger
+utoipa = { version = "5.3.1", features = ["axum_extras", "debug", "uuid"] }
+# utoipa-swagger-ui = { version = "9.0.0", features = ["axum"] }
+utoipa-axum = { version = "0.2.0", features = ["debug"] }

@@ -1,0 +1,24 @@
+debug = true
+# 指定开发环境配置
+profile = "development"
+
+[tracing]
+log_level = "debug"
+
+[server]
+host = "127.0.0.1"
+port = 3000
+
+[db]
+username = "root"
+password = "dev"
+host = "172.16.100.22"
+port = 3_306
+max_connections = 100
+database_name = "slzj_dev"
+
+[redis]
+host = "127.0.0.1"
+port = 6_379
+username = "default"
+password = "dev"

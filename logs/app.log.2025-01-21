@@ -1,0 +1,88 @@
+[2m2025-01-21T07:22:07.1053866Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m The initialization of Tracing was successful
+[2m2025-01-21T07:22:07.1076171Z[0m [32m INFO[0m [2mslzj_back::common::config[0m[2m:[0m Successfully read config profile: development.
+[2m2025-01-21T07:22:35.362964Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m The initialization of Tracing was successful
+[2m2025-01-21T07:22:35.3642966Z[0m [32m INFO[0m [2mslzj_back::common::config[0m[2m:[0m Successfully read config profile: development.
+[2m2025-01-21T07:33:12.3615159Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m The initialization of Tracing was successful
+[2m2025-01-21T07:33:12.3635938Z[0m [32m INFO[0m [2mslzj_back::common::config[0m[2m:[0m Successfully read config profile: development.
+[2m2025-01-21T07:34:35.191891Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m The initialization of Tracing was successful
+[2m2025-01-21T07:34:35.1939133Z[0m [32m INFO[0m [2mslzj_back::common::config[0m[2m:[0m Successfully read config profile: development.
+[2m2025-01-21T07:35:58.3057922Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m The initialization of Tracing was successful
+[2m2025-01-21T07:35:58.3073428Z[0m [32m INFO[0m [2mslzj_back::common::config[0m[2m:[0m Successfully read config profile: development.
+[2m2025-01-21T07:37:03.3210671Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m The initialization of Tracing was successful
+[2m2025-01-21T07:37:03.3227459Z[0m [32m INFO[0m [2mslzj_back::common::config[0m[2m:[0m Successfully read config profile: development.
+[2m2025-01-21T07:39:33.3068255Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m The initialization of Tracing was successful
+[2m2025-01-21T07:39:33.3090467Z[0m [32m INFO[0m [2mslzj_back::common::config[0m[2m:[0m Successfully read config profile: development.
+[2m2025-01-21T07:39:51.3596667Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m The initialization of Tracing was successful
+[2m2025-01-21T07:39:51.3615371Z[0m [32m INFO[0m [2mslzj_back::common::config[0m[2m:[0m Successfully read config profile: development.
+[2m2025-01-21T07:39:51.361803Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m successful
+[2m2025-01-21T07:40:49.3193385Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m The initialization of Tracing was successful
+[2m2025-01-21T07:40:49.3207824Z[0m [32m INFO[0m [2mslzj_back::common::config[0m[2m:[0m Successfully read config profile: development.
+[2m2025-01-21T07:40:49.3210873Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m successful
+[2m2025-01-21T07:41:13.1429065Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m The initialization of Tracing was successful
+[2m2025-01-21T07:41:13.1450201Z[0m [32m INFO[0m [2mslzj_back::common::config[0m[2m:[0m Successfully read config profile: development.
+[2m2025-01-21T07:42:11.9463388Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m The initialization of Tracing was successful
+[2m2025-01-21T07:42:11.9492747Z[0m [32m INFO[0m [2mslzj_back::common::config[0m[2m:[0m Successfully read config profile: development.
+[2m2025-01-21T08:11:56.9874662Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m The initialization of Tracing was successful
+[2m2025-01-21T08:11:56.988824Z[0m [32m INFO[0m [2mslzj_back::common::config[0m[2m:[0m Successfully read config profile: development.
+[2m2025-01-21T08:11:57.1164526Z[0m [34mDEBUG[0m [2msqlx_mysql::connection::tls[0m[2m:[0m not performing TLS upgrade: TLS support not compiled in
+[2m2025-01-21T08:11:57.1422631Z[0m [34mDEBUG[0m [2msqlx::query[0m[2m:[0m [3msummary[0m[2m=[0m"SET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES …" [3mdb.statement[0m[2m=[0m"\n\nSET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;\n" [3mrows_affected[0m[2m=[0m0 [3mrows_returned[0m[2m=[0m0 [3melapsed[0m[2m=[0m19.7132ms [3melapsed_secs[0m[2m=[0m0.0197132
+[2m2025-01-21T08:11:57.1429653Z[0m [32m INFO[0m [2mslzj_back::common::client::database[0m[2m:[0m Database connection
+[2m2025-01-21T08:11:57.1432362Z[0m [32m INFO[0m [2mslzj_back::common::state[0m[2m:[0m successful database
+[2m2025-01-21T08:11:57.1439148Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m successful
+[2m2025-01-21T08:11:57.1454892Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m 🚀 lisening on 127.0.0.1:3000
+[2m2025-01-21T08:12:38.2546523Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m The initialization of Tracing was successful
+[2m2025-01-21T08:12:38.2570088Z[0m [32m INFO[0m [2mslzj_back::common::config[0m[2m:[0m Successfully read config profile: development.
+[2m2025-01-21T08:12:38.3888809Z[0m [34mDEBUG[0m [2msqlx_mysql::connection::tls[0m[2m:[0m not performing TLS upgrade: TLS support not compiled in
+[2m2025-01-21T08:12:38.4301847Z[0m [34mDEBUG[0m [2msqlx::query[0m[2m:[0m [3msummary[0m[2m=[0m"SET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES …" [3mdb.statement[0m[2m=[0m"\n\nSET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;\n" [3mrows_affected[0m[2m=[0m0 [3mrows_returned[0m[2m=[0m0 [3melapsed[0m[2m=[0m34.0993ms [3melapsed_secs[0m[2m=[0m0.0340993
+[2m2025-01-21T08:12:38.4306508Z[0m [32m INFO[0m [2mslzj_back::common::client::database[0m[2m:[0m Database connection
+[2m2025-01-21T08:12:38.4314994Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m 🚀 lisening on 127.0.0.1:3000
+[2m2025-01-21T08:18:57.3585964Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m The initialization of Tracing was successful
+[2m2025-01-21T08:18:57.3600175Z[0m [32m INFO[0m [2mslzj_back::common::config[0m[2m:[0m Successfully read config profile: development.
+[2m2025-01-21T08:18:57.635809Z[0m [34mDEBUG[0m [2msqlx_mysql::connection::tls[0m[2m:[0m not performing TLS upgrade: TLS support not compiled in
+[2m2025-01-21T08:18:57.6921663Z[0m [34mDEBUG[0m [2msqlx::query[0m[2m:[0m [3msummary[0m[2m=[0m"SET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES …" [3mdb.statement[0m[2m=[0m"\n\nSET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;\n" [3mrows_affected[0m[2m=[0m0 [3mrows_returned[0m[2m=[0m0 [3melapsed[0m[2m=[0m49.2789ms [3melapsed_secs[0m[2m=[0m0.0492789
+[2m2025-01-21T08:18:57.6929047Z[0m [32m INFO[0m [2mslzj_back::common::client::database[0m[2m:[0m Database connection
+[2m2025-01-21T08:18:57.6943166Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m 🚀 lisening on 127.0.0.1:3000
+[2m2025-01-21T08:23:22.9839919Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m The initialization of Tracing was successful
+[2m2025-01-21T08:23:22.9858802Z[0m [32m INFO[0m [2mslzj_back::common::config[0m[2m:[0m Successfully read config profile: development.
+[2m2025-01-21T08:23:23.0142422Z[0m [34mDEBUG[0m [2msqlx_mysql::connection::tls[0m[2m:[0m not performing TLS upgrade: TLS support not compiled in
+[2m2025-01-21T08:23:23.0321905Z[0m [34mDEBUG[0m [2msqlx::query[0m[2m:[0m [3msummary[0m[2m=[0m"SET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES …" [3mdb.statement[0m[2m=[0m"\n\nSET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;\n" [3mrows_affected[0m[2m=[0m0 [3mrows_returned[0m[2m=[0m0 [3melapsed[0m[2m=[0m15.1132ms [3melapsed_secs[0m[2m=[0m0.0151132
+[2m2025-01-21T08:23:23.0328068Z[0m [32m INFO[0m [2mslzj_back::common::client::database[0m[2m:[0m Database connection
+[2m2025-01-21T08:23:23.0344862Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m 🚀 lisening on 127.0.0.1:3000
+[2m2025-01-21T08:23:25.4108535Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m received graceful shutdown signal. Telling tasks to shutdown
+[2m2025-01-21T08:23:25.4112636Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m signal received, not accepting new connections
+[2m2025-01-21T08:23:25.411804Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m waiting for 0 task(s) to finish
+[2m2025-01-21T08:23:31.5464578Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m The initialization of Tracing was successful
+[2m2025-01-21T08:23:31.5477601Z[0m [32m INFO[0m [2mslzj_back::common::config[0m[2m:[0m Successfully read config profile: development.
+[2m2025-01-21T08:23:31.5607283Z[0m [34mDEBUG[0m [2msqlx_mysql::connection::tls[0m[2m:[0m not performing TLS upgrade: TLS support not compiled in
+[2m2025-01-21T08:23:31.5753616Z[0m [34mDEBUG[0m [2msqlx::query[0m[2m:[0m [3msummary[0m[2m=[0m"SET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES …" [3mdb.statement[0m[2m=[0m"\n\nSET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;\n" [3mrows_affected[0m[2m=[0m0 [3mrows_returned[0m[2m=[0m0 [3melapsed[0m[2m=[0m13.1821ms [3melapsed_secs[0m[2m=[0m0.0131821
+[2m2025-01-21T08:23:31.5755494Z[0m [32m INFO[0m [2mslzj_back::common::client::database[0m[2m:[0m Database connection
+[2m2025-01-21T08:23:31.5760786Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m 🚀 lisening on 127.0.0.1:3000
+[2m2025-01-21T08:23:32.9700847Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m received graceful shutdown signal. Telling tasks to shutdown
+[2m2025-01-21T08:23:32.9706058Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m signal received, not accepting new connections
+[2m2025-01-21T08:23:32.9709934Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m waiting for 0 task(s) to finish
+[2m2025-01-21T08:23:37.5981598Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m The initialization of Tracing was successful
+[2m2025-01-21T08:23:37.5994289Z[0m [32m INFO[0m [2mslzj_back::common::config[0m[2m:[0m Successfully read config profile: development.
+[2m2025-01-21T08:23:37.6035631Z[0m [34mDEBUG[0m [2msqlx_mysql::connection::tls[0m[2m:[0m not performing TLS upgrade: TLS support not compiled in
+[2m2025-01-21T08:23:37.6244558Z[0m [34mDEBUG[0m [2msqlx::query[0m[2m:[0m [3msummary[0m[2m=[0m"SET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES …" [3mdb.statement[0m[2m=[0m"\n\nSET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;\n" [3mrows_affected[0m[2m=[0m0 [3mrows_returned[0m[2m=[0m0 [3melapsed[0m[2m=[0m19.7438ms [3melapsed_secs[0m[2m=[0m0.0197438
+[2m2025-01-21T08:23:37.6247259Z[0m [32m INFO[0m [2mslzj_back::common::client::database[0m[2m:[0m Database connection
+[2m2025-01-21T08:23:37.6252583Z[0m [32m INFO[0m [2mslzj_back[0m[2m:[0m 🚀 lisening on 127.0.0.1:3000
+[2m2025-01-21T08:28:46.8674409Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m connection 127.0.0.1:58301 accepted
+[2m2025-01-21T08:28:46.8680821Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m connection 127.0.0.1:58302 accepted
+[2m2025-01-21T08:28:47.1163128Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m connection 127.0.0.1:58322 accepted
+[2m2025-01-21T08:29:53.5419317Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m received graceful shutdown signal. Telling tasks to shutdown
+[2m2025-01-21T08:29:53.5423466Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m signal received in task, starting graceful shutdown
+[2m2025-01-21T08:29:53.5425343Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m signal received, not accepting new connections
+[2m2025-01-21T08:29:53.5426552Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m failed to serve connection: Cancelled
+[2m2025-01-21T08:29:53.542831Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m signal received in task, starting graceful shutdown
+[2m2025-01-21T08:29:53.5430427Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m signal received in task, starting graceful shutdown
+[2m2025-01-21T08:29:53.5431439Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m waiting for 3 task(s) to finish
+[2m2025-01-21T08:29:53.543294Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m failed to serve connection: Cancelled
+[2m2025-01-21T09:13:10.5333362Z[0m [32m INFO[0m [2maxum_sqlx_base[0m[2m:[0m The initialization of Tracing was successful
+[2m2025-01-21T09:13:10.5353279Z[0m [32m INFO[0m [2maxum_sqlx_base::common::config[0m[2m:[0m Successfully read config profile: development.
+[2m2025-01-21T09:13:10.5634617Z[0m [34mDEBUG[0m [2msqlx_mysql::connection::tls[0m[2m:[0m not performing TLS upgrade: TLS support not compiled in
+[2m2025-01-21T09:13:10.5924701Z[0m [34mDEBUG[0m [2msqlx::query[0m[2m:[0m [3msummary[0m[2m=[0m"SET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES …" [3mdb.statement[0m[2m=[0m"\n\nSET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;\n" [3mrows_affected[0m[2m=[0m0 [3mrows_returned[0m[2m=[0m0 [3melapsed[0m[2m=[0m26.5682ms [3melapsed_secs[0m[2m=[0m0.0265682
+[2m2025-01-21T09:13:10.5931002Z[0m [32m INFO[0m [2maxum_sqlx_base::common::client::database[0m[2m:[0m Database connection
+[2m2025-01-21T09:13:10.5941597Z[0m [32m INFO[0m [2maxum_sqlx_base[0m[2m:[0m 🚀 lisening on 127.0.0.1:3000
+[2m2025-01-21T09:13:12.6525193Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m received graceful shutdown signal. Telling tasks to shutdown
+[2m2025-01-21T09:13:12.6530327Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m signal received, not accepting new connections
+[2m2025-01-21T09:13:12.653346Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m waiting for 0 task(s) to finish
