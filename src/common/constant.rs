@@ -9,6 +9,8 @@ use super::{
 };
 
 pub const ENV_PREFIX: &str = "APP";
+pub const TOKEN_TYPE: &str = "Bearer";
+pub const SESSION_KEY_PREFIX: &str = "session_key_";
 
 pub static APP_CONFIG: Lazy<AppResult<AppConfig>> =
     Lazy::new(|| AppConfig::inint_config(get_env_source(ENV_PREFIX)));
@@ -16,7 +18,7 @@ pub static APP_CONFIG: Lazy<AppResult<AppConfig>> =
 //bearer token (授权持有者访问资源的权限)过期时间
 pub const EXPIRE_BEARER_TOKEN_SECS: Duration = Duration::from_secs(600);
 //refresh token 过期时间
-pub const EXPIRE_REFRESH_TOKEN_SECS: Duration = Duration::from_secs(600);
+pub const EXPIRE_REFRESH_TOKEN_SECS: Duration = Duration::from_secs(1_200);
 
 //session 过期时间
 pub const EXPIRE_SESSION_CODE_SECS: Duration = Duration::from_secs(2_000);

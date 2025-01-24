@@ -22,7 +22,7 @@ pub struct UserClaims {
     //过期时间
     pub exp: i64,
     //user id
-    pub uid: Uuid,
+    pub uid: i32,
     //session id
     pub sid: Uuid,
     //role user
@@ -30,7 +30,7 @@ pub struct UserClaims {
 }
 
 impl UserClaims {
-    pub fn new(duration: Duration, user_id: Uuid, session_id: Uuid, role: Role) -> Self {
+    pub fn new(duration: Duration, user_id: i32, session_id: Uuid, role: Role) -> Self {
         let now = Utc::now().timestamp();
         Self {
             iat: now,
@@ -52,37 +52,32 @@ impl UserClaims {
     }
 }
 
-pub trait UserClaimsRequest {
-    fn get_user_claims(&self) -> AppResult<UserClaims>;
-    fn get_user_id(&self) -> AppResult<Uuid>;
-}
-
-impl UserClaimsRequest for axum::extract::Request {
-    fn get_user_claims(&self) -> AppResult<UserClaims> {
-        self.extensions()
-            .get::<UserClaims>()
-            .cloned()
-            .ok_or_else(|| AppErr::UnauthorizedErr("User must login".to_string()))
-    }
-
-    fn get_user_id(&self) -> AppResult<Uuid> {
-        self.extensions()
-            .get::<UserClaims>()
-            .map(|uc| uc.uid)
-            .ok_or_else(|| AppErr::UnauthorizedErr("User must login".to_string()))
-    }
-}
+// pub trait UserClaimsRequest {
+//     fn get_user_claims(&self) -> AppResult<UserClaims>;
+//     fn get_user_id(&self) -> AppResult<i32>;
+// }
+//
+// impl UserClaimsRequest for axum::extract::Request {
+//     fn get_user_claims(&self) -> AppResult<UserClaims> {
+//         self.extensions()
+//             .get::<UserClaims>()
+//             .cloned()
+//             .ok_or_else(|| AppErr::UnauthorizedErr("User must login".to_string()))
+//     }
+//
+//     fn get_user_id(&self) -> AppResult<i32> {
+//         self.extensions()
+//             .get::<UserClaims>()
+//             .map(|uc| uc.uid)
+//             .ok_or_else(|| AppErr::UnauthorizedErr("User must login".to_string()))
+//     }
+// }
 
 #[test]
 fn user_claims_test() {
     use super::constant::ACCESS_TOKEN_DECODE_KEY;
     use super::constant::ACCESS_TOKEN_ENCODE_KEY;
-    let user_claims = UserClaims::new(
-        Duration::from_secs(60),
-        Uuid::new_v4(),
-        Uuid::new_v4(),
-        Role::default(),
-    );
+    let user_claims = UserClaims::new(Duration::from_secs(60), 1, Uuid::new_v4(), Role::default());
 
     let token = user_claims.encode(&ACCESS_TOKEN_ENCODE_KEY).unwrap();
     println!("token ={}", token);

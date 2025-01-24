@@ -1,2 +1,3 @@
 pub mod dir;
-pub mod middleware;
+pub mod hash;
+pub mod passwor;

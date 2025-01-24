@@ -1,0 +1,32 @@
+[2m2025-01-24T01:12:37.6254059Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m connection 127.0.0.1:56995 accepted
+[2m2025-01-24T01:12:37.6269149Z[0m [35mTRACE[0m [2maxum::rejection[0m[2m:[0m rejecting request [3mstatus[0m[2m=[0m422 [3mbody[0m[2m=[0m"Failed to deserialize the JSON body into the target type: missing field `login_name` at line 4 column 1" [3mrejection_type[0m[2m=[0m"axum::extract::rejection::JsonDataError"
+[2m2025-01-24T01:12:56.5080379Z[0m [32m INFO[0m [2maxum_sqlx_base::handlers::user_handler[0m[2m:[0m adminSC Sign in 
+[2m2025-01-24T01:12:56.5200328Z[0m [34mDEBUG[0m [2msqlx_mysql::connection::tls[0m[2m:[0m not performing TLS upgrade: TLS support not compiled in
+[2m2025-01-24T01:12:56.533702Z[0m [34mDEBUG[0m [2msqlx::query[0m[2m:[0m [3msummary[0m[2m=[0m"SET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES …" [3mdb.statement[0m[2m=[0m"\n\nSET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;\n" [3mrows_affected[0m[2m=[0m0 [3mrows_returned[0m[2m=[0m0 [3melapsed[0m[2m=[0m12.0829ms [3melapsed_secs[0m[2m=[0m0.0120829
+[2m2025-01-24T01:12:56.5658335Z[0m [34mDEBUG[0m [2msqlx::query[0m[2m:[0m [3msummary[0m[2m=[0m"select * from slzj_user …" [3mdb.statement[0m[2m=[0m"\n\nselect * from slzj_user where login_name = ? \n" [3mrows_affected[0m[2m=[0m0 [3mrows_returned[0m[2m=[0m1 [3melapsed[0m[2m=[0m31.0375ms [3melapsed_secs[0m[2m=[0m0.0310375
+[2m2025-01-24T01:12:56.5675823Z[0m [34mDEBUG[0m [2maxum_sqlx_base::utils::passwor[0m[2m:[0m The password is not correct:password hash string missing field
+[2m2025-01-24T01:21:07.076878Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m connection 127.0.0.1:57188 accepted
+[2m2025-01-24T01:21:07.0792973Z[0m [32m INFO[0m [2maxum_sqlx_base::handlers::user_handler[0m[2m:[0m adminSCc Sign in 
+[2m2025-01-24T01:21:07.0821664Z[0m [34mDEBUG[0m [2msqlx::query[0m[2m:[0m [3msummary[0m[2m=[0m"select * from slzj_user …" [3mdb.statement[0m[2m=[0m"\n\nselect * from slzj_user where login_name = ? \n" [3mrows_affected[0m[2m=[0m0 [3mrows_returned[0m[2m=[0m0 [3melapsed[0m[2m=[0m1.4843ms [3melapsed_secs[0m[2m=[0m0.0014843
+[2m2025-01-24T01:24:04.4434197Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m received graceful shutdown signal. Telling tasks to shutdown
+[2m2025-01-24T01:24:04.4442528Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m signal received, not accepting new connections
+[2m2025-01-24T01:24:04.444526Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m signal received in task, starting graceful shutdown
+[2m2025-01-24T01:24:04.4449364Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m signal received in task, starting graceful shutdown
+[2m2025-01-24T01:24:04.4454131Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m signal received in task, starting graceful shutdown
+[2m2025-01-24T01:24:04.4456707Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m waiting for 3 task(s) to finish
+[2m2025-01-24T01:24:12.313143Z[0m [32m INFO[0m [2maxum_sqlx_base[0m[2m:[0m The initialization of Tracing was successful
+[2m2025-01-24T01:24:12.3153235Z[0m [32m INFO[0m [2maxum_sqlx_base::common::config[0m[2m:[0m Successfully read config profile: development.
+[2m2025-01-24T01:24:12.319512Z[0m [34mDEBUG[0m [2msqlx_mysql::connection::tls[0m[2m:[0m not performing TLS upgrade: TLS support not compiled in
+[2m2025-01-24T01:24:12.3403839Z[0m [34mDEBUG[0m [2msqlx::query[0m[2m:[0m [3msummary[0m[2m=[0m"SET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES …" [3mdb.statement[0m[2m=[0m"\n\nSET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;\n" [3mrows_affected[0m[2m=[0m0 [3mrows_returned[0m[2m=[0m0 [3melapsed[0m[2m=[0m16.6158ms [3melapsed_secs[0m[2m=[0m0.0166158
+[2m2025-01-24T01:24:12.3419253Z[0m [32m INFO[0m [2maxum_sqlx_base::common::client::database[0m[2m:[0m Database connection
+[2m2025-01-24T01:24:12.3429959Z[0m [32m INFO[0m [2maxum_sqlx_base[0m[2m:[0m 🚀 lisening on 127.0.0.1:3000
+[2m2025-01-24T01:24:15.8860355Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m connection 127.0.0.1:57265 accepted
+[2m2025-01-24T01:24:15.8872625Z[0m [32m INFO[0m [2maxum_sqlx_base::handlers::user_handler[0m[2m:[0m adminSCc Sign in 
+[2m2025-01-24T01:24:15.8914404Z[0m [34mDEBUG[0m [2msqlx::query[0m[2m:[0m [3msummary[0m[2m=[0m"select * from slzj_user …" [3mdb.statement[0m[2m=[0m"\n\nselect * from slzj_user where login_name = ? \n" [3mrows_affected[0m[2m=[0m0 [3mrows_returned[0m[2m=[0m0 [3melapsed[0m[2m=[0m2.4961ms [3melapsed_secs[0m[2m=[0m0.0024961
+[2m2025-01-24T01:24:24.0300474Z[0m [32m INFO[0m [2maxum_sqlx_base::handlers::user_handler[0m[2m:[0m adminSC Sign in 
+[2m2025-01-24T01:24:24.0329554Z[0m [34mDEBUG[0m [2msqlx::query[0m[2m:[0m [3msummary[0m[2m=[0m"select * from slzj_user …" [3mdb.statement[0m[2m=[0m"\n\nselect * from slzj_user where login_name = ? \n" [3mrows_affected[0m[2m=[0m0 [3mrows_returned[0m[2m=[0m1 [3melapsed[0m[2m=[0m1.4199ms [3melapsed_secs[0m[2m=[0m0.0014199
+[2m2025-01-24T01:24:24.033391Z[0m [34mDEBUG[0m [2maxum_sqlx_base::utils::passwor[0m[2m:[0m The password is not correct:password hash string missing field
+[2m2025-01-24T01:43:32.2184575Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m received graceful shutdown signal. Telling tasks to shutdown
+[2m2025-01-24T01:43:32.2188913Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m signal received, not accepting new connections
+[2m2025-01-24T01:43:32.2191519Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m signal received in task, starting graceful shutdown
+[2m2025-01-24T01:43:32.2194096Z[0m [35mTRACE[0m [2maxum::serve[0m[2m:[0m waiting for 1 task(s) to finish

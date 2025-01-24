@@ -16,7 +16,7 @@ pub trait RedisClientExt: ClientBuilder {
         value: &str,
         expire: Duration,
     ) -> impl std::future::Future<Output = AppResult<()>>;
-    fn get(&self, key: &str) -> impl std::future::Future<Output = AppResult<String>>;
+    fn get(&self, key: &str) -> impl std::future::Future<Output = AppResult<Option<String>>>;
     fn exist(&self, key: &str) -> impl std::future::Future<Output = AppResult<bool>>;
     fn del(&self, key: &str) -> impl std::future::Future<Output = AppResult<bool>>;
     fn ttl(&self, key: &str) -> impl std::future::Future<Output = AppResult<i64>>;
@@ -53,13 +53,10 @@ impl RedisClientExt for RedisClient {
         Ok(())
     }
 
-    async fn get(&self, key: &str) -> AppResult<String> {
+    async fn get(&self, key: &str) -> AppResult<Option<String>> {
         let mut conn = self.get_multiplexed_async_connection().await?;
-        let value = redis::cmd("GET")
-            .arg(key)
-            .query_async::<String>(&mut conn)
-            .await?;
-        info!("redis get value:{}", value);
+        let value = redis::cmd("GET").arg(key).query_async(&mut conn).await?;
+        info!("redis get key:{}", key);
         Ok(value)
     }
 
@@ -137,7 +134,7 @@ mod redis_test_mod {
     async fn redis_client_get_test() -> AppResult<()> {
         let redis_client: RedisClient = build_redis_client().await?;
         let result = redis_client.get("name").await?;
-        assert_eq!(result, "wdc");
+        assert_eq!(result, Some("wdc".to_string()));
         Ok(())
     }
     #[tokio::test]
